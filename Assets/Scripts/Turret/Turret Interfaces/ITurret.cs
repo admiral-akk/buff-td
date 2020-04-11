@@ -9,6 +9,8 @@ public abstract class ITurret : MonoBehaviour
     protected EnemyLife target = null;
     protected float range = 4f;
 
+    public GameObject canvas;
+
     public void SetNode(Node node_)
     {
         node = node_;
@@ -76,12 +78,13 @@ public abstract class ITurret : MonoBehaviour
     virtual protected void UpdateNoTarget() { }
     virtual protected void TargetFound() { }
 
-
-
     private void OnMouseEnter()
     {
+        canvas.SetActive(true);
     }
+
     private void OnMouseExit()
     {
+        canvas.SetActive(false);
     }
 }

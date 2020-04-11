@@ -4,7 +4,7 @@ using System.Collections;
 public class RampingLaserTurret : ILaserTurret
 {
     private float startingDps = 20f;
-    private float dpsGainPerSec = 20f;
+    private float dpsGainPerSec = 40f;
 
     override protected void TargetLost() {
         dps = startingDps;

@@ -11,7 +11,7 @@ public class SweepingLaserTurret : ITurret
     private Vector3 sweepDirection;
     private float sweepLength = 2.5f;
     private float fireAnimationTime = 0.0f;
-    private float fireAnimationLength = 0.2f;
+    private float fireAnimationLength = 0.4f;
     private bool isFiring = false;
 
     public LineRenderer laser;
