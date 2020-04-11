@@ -1,0 +1,1 @@
+﻿public enum BuffType { ATTACK_RATE_UP, DAMAGE_UP, RANGE_UP}
